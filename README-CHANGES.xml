@@ -8,6 +8,6 @@
     </c:release>
   </c:releases>
   <c:ticket-systems>
-    <c:ticket-system default="true" id="com.github.io7m.mime2045" url="https://www.github.com/io7m/mime2045/issues/"/>
+    <c:ticket-system default="true" id="com.github.io7m.mime2045" url="https://www.github.com/io7m-com/mime2045/issues/"/>
   </c:ticket-systems>
 </c:changelog>

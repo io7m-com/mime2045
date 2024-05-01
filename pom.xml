@@ -43,9 +43,9 @@
   </licenses>
 
   <scm>
-    <url>https://www.github.com/io7m/mime2045</url>
-    <connection>scm:git:https://github.com/io7m/mime2045</connection>
-    <developerConnection>scm:git:https://github.com/io7m/mime2045</developerConnection>
+    <url>https://www.github.com/io7m-com/mime2045</url>
+    <connection>scm:git:https://www.github.com/io7m-com/mime2045</connection>
+    <developerConnection>scm:git:https://www.github.com/io7m-com/mime2045</developerConnection>
   </scm>
 
   <developers>
@@ -58,7 +58,7 @@
   </developers>
 
   <issueManagement>
-    <url>https://www.github.com/io7m/mime2045/issues</url>
+    <url>https://www.github.com/io7m-com/mime2045/issues</url>
     <system>GitHub Issues</system>
   </issueManagement>
 
@@ -80,7 +80,7 @@
 
   <ciManagement>
     <system>GitHub Actions</system>
-    <url>https://github.com/mime2045/actions</url>
+    <url>https://www.github.com/io7m-com/mime2045/actions</url>
   </ciManagement>
 
   <prerequisites>
