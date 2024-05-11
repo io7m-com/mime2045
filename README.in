@@ -1,0 +1,30 @@
+
+## mime2045
+
+The `mime2045` package provides functions for parsing RFC 2045 MIME types.
+
+## Features
+
+* RFC 2045 MIME type parsing.
+* High coverage test suite.
+* [OSGi-ready](https://www.osgi.org/).
+* [JPMS-ready](https://en.wikipedia.org/wiki/Java_Platform_Module_System).
+* ISC license.
+
+## Usage
+
+Declare MIME types directly:
+
+```
+final var textPlain =
+  MimeType.of("text", "plain");
+```
+
+Parse MIME type strings:
+
+```
+final var parsed =
+  new MimeParsers().parse("text/plain");
+
+assert textPlain.equals(parsed);
+```

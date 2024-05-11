@@ -8,12 +8,12 @@
   <parent>
     <groupId>com.io7m.primogenitor</groupId>
     <artifactId>com.io7m.primogenitor.full</artifactId>
-    <version>8.0.0-beta0001</version>
+    <version>8.2.0</version>
   </parent>
 
   <groupId>com.io7m.mime2045</groupId>
   <artifactId>com.io7m.mime2045</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
 
   <packaging>pom</packaging>
   <name>com.io7m.mime2045</name>
@@ -28,10 +28,13 @@
   </modules>
 
   <properties>
-    <com.io7m.xstructural.version>1.8.0</com.io7m.xstructural.version>
+    <!-- Configuration. -->
     <io7m.api.previousVersion>1.0.0</io7m.api.previousVersion>
-    <junit.version>5.9.3</junit.version>
-    <jqwik.version>1.7.3</jqwik.version>
+    <io7m.java.targetJavaVersion>17</io7m.java.targetJavaVersion>
+
+    <!-- Third-party dependencies. -->
+    <jqwik.version>1.8.4</jqwik.version>
+    <junit.version>5.10.2</junit.version>
   </properties>
 
   <licenses>
@@ -42,9 +45,9 @@
   </licenses>
 
   <scm>
-    <url>https://www.github.com/io7m/mime2045</url>
-    <connection>scm:git:https://github.com/io7m/mime2045</connection>
-    <developerConnection>scm:git:https://github.com/io7m/mime2045</developerConnection>
+    <url>https://www.github.com/io7m-com/mime2045</url>
+    <connection>scm:git:https://www.github.com/io7m-com/mime2045</connection>
+    <developerConnection>scm:git:https://www.github.com/io7m-com/mime2045</developerConnection>
   </scm>
 
   <developers>
@@ -57,7 +60,7 @@
   </developers>
 
   <issueManagement>
-    <url>https://www.github.com/io7m/mime2045/issues</url>
+    <url>https://www.github.com/io7m-com/mime2045/issues</url>
     <system>GitHub Issues</system>
   </issueManagement>
 
@@ -79,7 +82,7 @@
 
   <ciManagement>
     <system>GitHub Actions</system>
-    <url>https://github.com/mime2045/actions</url>
+    <url>https://www.github.com/io7m-com/mime2045/actions</url>
   </ciManagement>
 
   <prerequisites>
@@ -91,12 +94,12 @@
       <dependency>
         <groupId>ch.qos.logback</groupId>
         <artifactId>logback-classic</artifactId>
-        <version>1.4.8</version>
+        <version>1.5.6</version>
       </dependency>
       <dependency>
         <groupId>org.slf4j</groupId>
         <artifactId>slf4j-api</artifactId>
-        <version>2.0.7</version>
+        <version>2.0.13</version>
       </dependency>
       <dependency>
         <groupId>org.osgi</groupId>
@@ -126,12 +129,12 @@
       <dependency>
         <groupId>com.io7m.primogenitor</groupId>
         <artifactId>com.io7m.primogenitor.support</artifactId>
-        <version>8.0.0-beta0001</version>
+        <version>8.2.0</version>
       </dependency>
       <dependency>
         <groupId>com.io7m.jlexing</groupId>
         <artifactId>com.io7m.jlexing.core</artifactId>
-        <version>3.1.0</version>
+        <version>3.2.0</version>
       </dependency>
       <dependency>
         <groupId>net.jqwik</groupId>
@@ -160,7 +163,7 @@
         <plugin>
           <groupId>de.jflex</groupId>
           <artifactId>jflex-maven-plugin</artifactId>
-          <version>1.8.2</version>
+          <version>1.9.1</version>
         </plugin>
       </plugins>
     </pluginManagement>
