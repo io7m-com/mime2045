@@ -13,7 +13,7 @@
 
   <groupId>com.io7m.mime2045</groupId>
   <artifactId>com.io7m.mime2045</artifactId>
-  <version>1.0.1</version>
+  <version>1.1.0</version>
 
   <packaging>pom</packaging>
   <name>com.io7m.mime2045</name>
@@ -22,6 +22,7 @@
 
   <modules>
     <module>com.io7m.mime2045.core</module>
+    <module>com.io7m.mime2045.fileext</module>
     <module>com.io7m.mime2045.parser.api</module>
     <module>com.io7m.mime2045.parser</module>
     <module>com.io7m.mime2045.tests</module>
@@ -29,12 +30,12 @@
 
   <properties>
     <!-- Configuration. -->
-    <io7m.api.previousVersion>1.0.0</io7m.api.previousVersion>
+    <io7m.api.previousVersion>1.0.1</io7m.api.previousVersion>
     <io7m.java.targetJavaVersion>17</io7m.java.targetJavaVersion>
 
     <!-- Third-party dependencies. -->
-    <jqwik.version>1.8.4</jqwik.version>
-    <junit.version>5.10.2</junit.version>
+    <jqwik.version>1.9.0</jqwik.version>
+    <junit.version>5.11.1</junit.version>
   </properties>
 
   <licenses>
@@ -94,12 +95,12 @@
       <dependency>
         <groupId>ch.qos.logback</groupId>
         <artifactId>logback-classic</artifactId>
-        <version>1.5.6</version>
+        <version>1.5.8</version>
       </dependency>
       <dependency>
         <groupId>org.slf4j</groupId>
         <artifactId>slf4j-api</artifactId>
-        <version>2.0.13</version>
+        <version>2.0.16</version>
       </dependency>
       <dependency>
         <groupId>org.osgi</groupId>
@@ -116,16 +117,15 @@
         <artifactId>org.osgi.service.component.annotations</artifactId>
         <version>1.5.1</version>
       </dependency>
+
       <dependency>
-        <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter-engine</artifactId>
+        <groupId>org.junit</groupId>
+        <artifactId>junit-bom</artifactId>
         <version>${junit.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
       </dependency>
-      <dependency>
-        <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter-api</artifactId>
-        <version>${junit.version}</version>
-      </dependency>
+
       <dependency>
         <groupId>com.io7m.primogenitor</groupId>
         <artifactId>com.io7m.primogenitor.support</artifactId>
