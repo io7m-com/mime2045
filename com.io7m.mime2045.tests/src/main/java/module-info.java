@@ -1,5 +1,5 @@
 /*
- * Copyright © 2022 Mark Raynsford <code@io7m.com> https://www.io7m.com
+ * Copyright © 2024 Mark Raynsford <code@io7m.com> https://www.io7m.com
  *
  * Permission to use, copy, modify, and/or distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above
@@ -14,26 +14,23 @@
  * IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-import com.io7m.mime2045.parser.MimeParsers;
-import com.io7m.mime2045.parser.api.MimeParserFactoryType;
-
 /**
- * RFC 2045 MIME type parsing (Parser implementation)
+ * RFC 2045 MIME type parsing (Test suite)
  */
 
-module com.io7m.mime2045.parser
+open module com.io7m.mime2045.tests
 {
-  requires static org.osgi.annotation.bundle;
-  requires static org.osgi.annotation.versioning;
+  requires org.junit.jupiter.api;
+  requires org.junit.jupiter.engine;
+  requires org.junit.platform.commons;
+  requires org.junit.platform.engine;
+  requires org.junit.platform.launcher;
 
-  requires transitive com.io7m.mime2045.core;
-  requires transitive com.io7m.mime2045.parser.api;
+  requires com.io7m.mime2045.fileext;
+  requires com.io7m.mime2045.core;
+  requires com.io7m.mime2045.parser;
+  requires net.jqwik.api;
+  requires org.slf4j;
 
-  requires com.io7m.jlexing.core;
-
-  provides MimeParserFactoryType
-    with MimeParsers;
-
-  exports com.io7m.mime2045.parser;
-  exports com.io7m.mime2045.parser.internal;
+  exports com.io7m.mime2045.tests;
 }

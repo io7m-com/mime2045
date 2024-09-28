@@ -22,6 +22,7 @@
 
   <modules>
     <module>com.io7m.mime2045.core</module>
+    <module>com.io7m.mime2045.fileext</module>
     <module>com.io7m.mime2045.parser.api</module>
     <module>com.io7m.mime2045.parser</module>
     <module>com.io7m.mime2045.tests</module>
@@ -116,16 +117,15 @@
         <artifactId>org.osgi.service.component.annotations</artifactId>
         <version>1.5.1</version>
       </dependency>
+
       <dependency>
-        <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter-engine</artifactId>
+        <groupId>org.junit</groupId>
+        <artifactId>junit-bom</artifactId>
         <version>${junit.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
       </dependency>
-      <dependency>
-        <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter-api</artifactId>
-        <version>${junit.version}</version>
-      </dependency>
+
       <dependency>
         <groupId>com.io7m.primogenitor</groupId>
         <artifactId>com.io7m.primogenitor.support</artifactId>
